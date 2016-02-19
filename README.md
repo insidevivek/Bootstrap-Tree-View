@@ -1,4 +1,4 @@
-# Bootstrap-Tree-View
+# Bootstrap Tree View
 Bootstrap Tree view component has been written using Bootstrap framework.  It is absolutely free, open source and distributed under the MIT license. 
 
 I have used bootstrap 3 and font awesome 4, but it can be easily used with other frameworks.
