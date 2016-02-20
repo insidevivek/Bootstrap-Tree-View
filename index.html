@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Tree View</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="bs-tree-view.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p></p>
+          <div class="well">
+            <!-- tree nav starts here -->
+            <div class="nav-tree">
+              <label><span class="fa fa-paper-plane"></span> Bootstrap Tree View</label>
+              <ul>
+                <li class="has-child"><p><span class="fa fa-cubes"></span> Cluster Name 1</p>
+                  <a class="" href="#"><i class="fa fa-minus-square"></i></a>
+                  <ul>
+                    <li><p><span class="fa fa-cloud-upload"></span> Databases (22)</p></li>
+                    <li class="has-child"><p><a href=""><span class="icon-menu"></span> App Servers (4) xxxxx</a></p>
+                      <i class="fa fa-minus-square"></i>
+                      <ul>
+                        <li><p><a href=""><span class="fa fa-server"></span> App Server 1</a></p></li>
+                        <li><p><span class="fa fa-server"></span> App Server 2</p></li>
+                        <li><p><span class="fa fa-server"></span> App Server 3</p></li>
+                      </ul>
+                    </li>
+                    <li class="has-child"><p><span class="icon-menu"></span> Hosts (5)</p>
+                      <a class="" href="#"><i class="fa fa-minus-square"></i></a>
+                      <ul>
+                        <li><p><span class="fa fa-flask"></span> host-name</p></li>
+                        <li><p><span class="fa fa-flask"></span> host-name</p></li>
+                        <li class="has-child tree-collapsed"><p><span class="fa fa-flask"></span> host-name</p>
+                          <a class="" href="#"><i class="fa fa-minus-square"></i></a>
+                        <!-- this is the tree node, when you are hiding ul, make sure to add class tree-collapsed with class has-child -->
+                        <ul class="hide">
+                          <li><p><span class="fa fa-cloud-upload"></span> Testing 1</p></li>
+                          <li><p><span class="fa fa-cloud-upload"></span> Testing 1</p></li>
+                          <li><p><span class="fa fa-cloud-upload"></span> Testing 1</p></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-child"><p><span class="fa fa-cubes"></span> Cluster Name 2</p>
+                <a class="" href="#"><i class="fa fa-minus-square"></i></a>
+                <ul>
+                  <li><p><span class="fa fa-cloud-upload"></span> Testing 1</p></li>
+                  <li><p><span class="fa fa-cloud-upload"></span> Testing 2</p></li>
+                  <li><p><span class="fa fa-cloud-upload"></span> Testing 3</p></li>
+                </ul>
+              </li>
+              <li class="has-child"><p><span class="fa fa-cubes"></span> Cluster Name 3</p>
+                <a class="" href="#"><i class="fa fa-minus-square"></i></a>
+                <ul>
+                  <li><p><span class="fa fa-bar-chart-o"></span> Testing 1</p></li>
+                  <li><p><span class="fa fa-bar-chart-o"></span> Testing 2</p></li>
+                  <li><p><span class="fa fa-bar-chart-o"></span> Testing 3</p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- end of tree nav -->
+        </div>
+        </div>
+        <div class="col-sm-8">
+          <h1>Bootstrap Tree View</h1>
+          <p>Bootstrap Tree view component has been written using Bootstrap framework. It is absolutely free, open source and distributed under the <a href="https://github.com/insidevivek/Bootstrap-Tree-View/blob/master/LICENSE.md">MIT license</a>.</p>
+          <p>I have used bootstrap 3 and font awesome 4, but it can be easily used with other frameworks.</p>
+          <hr>
+          <h4>Getting Started</h4>
+          <p>Include bs-tree-view.css in your HTML file or copy the style and paste it to your custom css file. It has been written in LESS and Sass as well. :)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
