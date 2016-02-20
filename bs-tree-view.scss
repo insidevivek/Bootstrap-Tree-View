@@ -1,0 +1,65 @@
+/*
+* Bootstrap Tree view Version V1.0
+* Copyright 2016 Vivek Anand
+* Licensed under MIT: https://github.com/insidevivek/Bootstrap-Tree-View/blob/master/LICENSE.md
+*/
+
+.nav-tree {
+  color: #6C7587; // Use variable for color.
+  background-color: #fff; 
+  padding: 20px 10px 30px;
+  a {
+    color: #585858;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
+    &.selected {
+      color: #2AB2EA;
+    }
+  }
+  ul, li { list-style: none; margin: 0; padding: 0;}
+  ul {
+    padding-left: 1em;
+    li:last-child > ul {
+      border-left: 1px solid #fff;
+      margin-left: -15px;
+    }
+  }
+  li {
+    padding-left: 1em;
+    border: 1px solid #C9C9C9;
+    border-top: 0;
+    border-right: 0;
+    padding-top: 10px;
+    &.has-child {
+      border-bottom: 0;
+      position: relative;
+      i {
+        position: absolute;
+        left: -.5em;
+        top: 1.3em;
+        color: #C9C9C9;
+        cursor: pointer;
+        background-color: #fff;
+        z-index: 1;
+      }
+      &.od-collapsed {
+        border-bottom: 1px solid #C9C9C9;
+      }
+    }
+    p {
+      margin: 0;
+      background: white;
+      position: relative;
+      top: 0.5em;
+      line-height: 1;
+      z-index: 1;
+    }
+    ul {
+      border-top: 1px solid #C9C9C9;
+      margin-left: -1em;
+      padding-left: 2em;
+    }
+  }
+}
